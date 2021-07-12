@@ -23,7 +23,9 @@ function Playground(props) {
       </div>
     )
   }
-const decrease = () => setHealthPoints(healthPoints - 10)
+  
+  const decrease = () => setHealthPoints(healthPoints - 10)
+
   return (
     <div>
       <h1 style={{color: 'red'}}>Hello from the Playground component</h1>
