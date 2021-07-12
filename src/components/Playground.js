@@ -40,4 +40,14 @@ function Playground(props) {
   )
 }
 
+// works for ONE object
+function Person(props) {
+  return (
+    <div>
+      {props.name}
+      <button onClick={() => setFeatured(props.id)}></button>
+    </div>
+  )
+}
+
 export default Playground
