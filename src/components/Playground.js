@@ -23,13 +23,13 @@ function Playground(props) {
       </div>
     )
   }
-
+const decrease = () => setHealthPoints(healthPoints - 10)
   return (
     <div>
-      <h1>Hello from the Playground component</h1>
+      <h1 style={{color: 'red'}}>Hello from the Playground component</h1>
       <span>Current Health: {healthPoints}</span>
       <span>{healthPoints > 50 ? 'You are in good health.' : 'Your hurt.'}</span>
-      <button onClick={() => setHealthPoints(healthPoints - 10)}>Decrease health</button>
+      <button onClick={decrease}>Decrease health</button>
       <div>
         <button onClick={() => setSpinnerOn(true)}>Open</button>
       </div>
