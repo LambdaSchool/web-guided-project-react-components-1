@@ -23,7 +23,7 @@ function Playground(props) {
       </div>
     )
   }
-  
+
   const decrease = () => setHealthPoints(healthPoints - 10)
 
   return (
@@ -35,6 +35,7 @@ function Playground(props) {
       <div>
         <button onClick={() => setSpinnerOn(true)}>Open</button>
       </div>
+      <input onChange={event => console.log(event.target.value)}/>
     </div>
   )
 }
