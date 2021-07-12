@@ -28,7 +28,7 @@ function App(props) {
     <div className='container'>
       <h1>Welcome to React, {cohortPrefix} {cohort}</h1>
       <p>Number of Students: {someObj.studentsInZoom}</p>
-      <Playground />
+      <Playground cohort={cohort} />
     </div>
   )
 }
