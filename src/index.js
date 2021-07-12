@@ -28,14 +28,12 @@ function App(props) {
     <div className='container'>
       <h1>Welcome to React, {cohortPrefix} {cohort}</h1>
       <p>Number of Students: {someObj.studentsInZoom}</p>
+      <Playground />
     </div>
   )
 }
 
 render(
-  <div>
-    <App cohortPrefix='Web' cohort='45' someObj={{ studentsInZoom: 78 }} />
-    <Playground />
-  </div>,
+ <App cohortPrefix='Web' cohort='45' someObj={{ studentsInZoom: 78 }} />,
   document.querySelector('#root')
 )
